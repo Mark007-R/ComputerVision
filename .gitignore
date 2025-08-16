@@ -1,0 +1,38 @@
+# Ignore Visual Studio and VSCode settings
+.vs/
+.vscode/
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+
+# Ignore SQLite databases
+*.sqlite
+
+# Ignore video/media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+*.wmv
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore environment/config files
+.env
+*.cfg
+*.ini
