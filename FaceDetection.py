@@ -23,23 +23,24 @@ class FaceDetector:
                 bboxs.append([id,bbox,detection.score])
                 if draw:
                     img = self.bestborder(img,bbox)
+                    # cv2.rectangle(img,bbox,color=(255,255,0),thickness=2)
                     cv2.putText(img,f'{int(detection.score[0]*100)}%',(bbox[0],bbox[1]-20),cv2.FONT_HERSHEY_COMPLEX,3,(255,255,0),2)
         return img
-    def bestborder(self,img,bbox,l=35):
+    def bestborder(self,img,bbox,l=20):
         x,y,w,h = bbox
         x1,y1=x+w,y+h
         cv2.rectangle(img,bbox,color=(255,255,0),thickness=2)        
         cv2.line(img,(x,y),(x+l,y),(255,255,0),7)
         cv2.line(img,(x,y),(x,y+l),(255,255,0),7)
 
-        cv2.line(img,(x1,y),(x-l,y),(255,255,0),7)
-        cv2.line(img,(x1,y),(x,y+l),(255,255,0),7)
+        cv2.line(img,(x1,y),(x1-l,y),(255,255,0),7)
+        cv2.line(img,(x1,y),(x1,y+l),(255,255,0),7)
 
-        cv2.line(img,(x,y1),(x+l,y),(255,255,0),7)
-        cv2.line(img,(x,y1),(x,y-l),(255,255,0),7)
+        cv2.line(img,(x,y1),(x+l,y1),(255,255,0),7)
+        cv2.line(img,(x,y1),(x,y1-l),(255,255,0),7)
 
-        cv2.line(img,(x1,y),(x-l,y),(255,255,0),7)
-        cv2.line(img,(x1,y),(x,y-l),(255,255,0),7)
+        cv2.line(img,(x1,y1),(x1-l,y1),(255,255,0),7)
+        cv2.line(img,(x1,y1),(x1,y1-l),(255,255,0),7)
 
         return img
 
