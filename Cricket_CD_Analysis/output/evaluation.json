@@ -1,0 +1,28 @@
+{
+  "video_processed": "C:\\Users\\7XIN\\Desktop\\Mark\\ALL\\DATA_SCIENTIST\\ComputerVision\\Cricket_CD_Analysis\\input\\cover_drive.mp4",
+  "frames_processed": 136,
+  "avg_fps": 31.713356022423415,
+  "scores": {
+    "Footwork": {
+      "score": 2,
+      "comment": "Work on pointing the front foot more towards the target; improves transfer and timing."
+    },
+    "Head Position": {
+      "score": 3,
+      "comment": "Keep head over front knee (lower center of gravity) to improve control."
+    },
+    "Swing Control": {
+      "score": 4,
+      "comment": "Work on maintaining front elbow elevation for stroke control (drills: shadow front-elbow holds)."
+    },
+    "Balance": {
+      "score": 9,
+      "comment": "Good balance through the shot."
+    },
+    "Follow-through": {
+      "score": 4,
+      "comment": "Extend follow-through and avoid early upright posture; this helps power & control."
+    }
+  },
+  "timestamp": "2025-08-18 20:53:14"
+}
